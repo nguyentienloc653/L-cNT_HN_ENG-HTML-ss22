@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Nhập vào số 5 phần tử");
+        let arr=[];
+        let value;
+        let chan = 0;
+        let le = 0;
+        for(let i = 0; i< 5; i++){
+
+            value = +prompt(`mời bạn nhập vào phần tử thứ ${i+1}`)
+            arr[i]= value;
+            if(value % 2 === 0){
+                chan += value;
+            }else{
+                le += value;
+            }
+        }
+
+        console.log(` tổng số chẵn là : ${chan} `);
+        console.log(` tổng số lẻ là : ${le} `);
+
+    </script>
+</body>
+</html>
