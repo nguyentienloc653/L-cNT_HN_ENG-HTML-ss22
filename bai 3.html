@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+        let a = prompt("Nhập phần tử của mảng :");
+        let valid = true;
+        
+        for (let i = 0; i < a.length; i++) {
+        if (a[i] < "0" || a[i] > "9") { 
+              valid = false;
+            break;
+    }
+}
+
+        if(!valid){
+            console.log("Dãy không hợp lệ ");
+        }else{
+
+        const myArray = a.split("").reverse().join("");
+        console.log(myArray);
+        }
+
+
+    </script>
+</body>
+</html>
